@@ -1,8 +1,38 @@
 [
-  { "slug": "kitchens", "title": "Kitchens", "category": "Kitchens", "blurb": "Hand-painted and natural timber kitchens, designed for the room and made in the workshop." },
-  { "slug": "bathrooms", "title": "Bathrooms", "category": "Bathrooms", "blurb": "Vanity units, washstands and bathroom cabinetry built to cope with damp and daily use." },
-  { "slug": "cabinetry", "title": "Cabinetry & Storage", "category": "Cabinetry & Storage", "blurb": "Wardrobes, alcove units, under-stairs storage and shelving that make the most of awkward spaces." },
-  { "slug": "furniture", "title": "Furniture", "category": "Furniture", "blurb": "Dining tables, desks, beds and freestanding pieces, made one at a time." },
-  { "slug": "staircases", "title": "Staircases", "category": "Staircases", "blurb": "Oak staircases, open-tread stairs and spirals, made to fit old houses and new." },
-  { "slug": "windows-and-doors", "title": "Windows, Doors & Joinery", "category": "Windows, Doors & Joinery", "blurb": "Timber windows, front and internal doors, and fine joinery such as inlaid floors." }
+  {
+    "slug": "kitchens",
+    "title": "Kitchens",
+    "category": "Kitchens",
+    "blurb": "Painted and natural timber kitchens, designed for your room and the way you cook and gather."
+  },
+  {
+    "slug": "bathrooms",
+    "title": "Bathrooms",
+    "category": "Bathrooms",
+    "blurb": "Vanity units, washstands and storage in properly sealed timber, made to fit your bathroom."
+  },
+  {
+    "slug": "cabinetry",
+    "title": "Cabinetry & Storage",
+    "category": "Cabinetry & Storage",
+    "blurb": "Fitted wardrobes, alcove cupboards, under-stairs storage and shelving that make good use of every corner."
+  },
+  {
+    "slug": "furniture",
+    "title": "Furniture",
+    "category": "Furniture",
+    "blurb": "Dining tables, desks, beds and dressers, made one at a time to suit the room they will live in."
+  },
+  {
+    "slug": "staircases",
+    "title": "Staircases",
+    "category": "Staircases",
+    "blurb": "Oak, open-tread and spiral staircases, made to fit period cottages and modern homes alike."
+  },
+  {
+    "slug": "windows-and-doors",
+    "title": "Windows, Doors & Joinery",
+    "category": "Windows, Doors & Joinery",
+    "blurb": "Timber windows and doors made for older stone openings, plus panelling, inlays and fine joinery."
+  }
 ]

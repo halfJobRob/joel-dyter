@@ -3,7 +3,7 @@
   <div class="container site-footer__grid">
     <div class="site-footer__brand">
       {% include "partials/logo.njk" %}
-      <p>Handmade kitchens, cabinetry, staircases, windows and doors, designed and made by Joel in his Hebden Bridge workshop.</p>
+      <p>Bespoke kitchens, furniture and joinery, made by hand in Hebden Bridge for homes across the Calder Valley.</p>
       <ul class="social" aria-label="Joel Dyter on social media">
         <li><a href="{{ site.whatsapp | whatsappHref(site.whatsappMessage) }}" target="_blank" rel="noopener">{{ icon("whatsapp") }}<span class="visually-hidden">WhatsApp</span></a></li>
         {%- if site.social.instagram %}<li><a href="{{ site.social.instagram }}" target="_blank" rel="noopener">{{ icon("instagram") }}<span class="visually-hidden">Instagram</span></a></li>{% endif %}
@@ -12,7 +12,7 @@
       </ul>
     </div>
     <div>
-      <h2 class="site-footer__heading">What I make</h2>
+      <h2 class="site-footer__heading">Bespoke work</h2>
       <ul class="site-footer__links">
         {%- for s in services %}<li><a href="/{{ s.slug }}/">{{ s.title }}</a></li>{% endfor %}
       </ul>

@@ -4,18 +4,18 @@ metaTitle: "Bespoke Bathroom Furniture & Vanity Units | Joel Dyter, Hebden Bridg
 description: "Handmade bathroom vanity units, washstands and storage in solid timber, made to measure by cabinet maker Joel Dyter in Hebden Bridge."
 category: Bathrooms
 heading: Bathroom furniture, made to measure
-intro: "Vanity units, washstands, cupboards and panelling, built from properly sealed solid timber to sit perfectly in your bathroom or washroom."
+intro: "Vanity units, washstands, storage and panelling in properly sealed timber, made to fit your bathroom and to bring the warmth of real wood into the room."
 heroImage: /images/projects/washroom/01.jpg
 heroAlt: Dark painted washroom cabinetry with ceramic sink
 workTitle: Bathrooms and washrooms
 highlights:
-  - title: Built for damp rooms
-    text: Timber chosen and finished to cope with steam and splashes, not chipboard that swells.
-  - title: Any space, any shape
-    text: Under eaves, into alcoves, around pipes and boxing. Units are made to fit the room, not the catalogue.
-  - title: Matches the rest of the house
-    text: The same joinery and paint finishes as a kitchen or bedroom, so the whole house feels considered.
+  - title: Suited to damp rooms
+    text: Timbers and finishes are chosen to cope with steam and splashes, unlike chipboard units that swell and fail.
+  - title: Fitted to the space
+    text: Under eaves, into alcoves and around pipework, each unit is made for the room it sits in.
+  - title: Consistent through the house
+    text: The same joinery and finishes used in kitchens and bedrooms, so your home feels considered from room to room.
 ---
-Off-the-shelf bathroom furniture is designed for rooms that don't exist: perfectly square, with pipes exactly where the catalogue expects them. Most real bathrooms, especially in older homes, have sloping ceilings, uneven walls and awkward boxing.
+Standard bathroom furniture assumes square walls and pipework in predictable places, which few real bathrooms have, especially in older houses. Made-to-measure furniture uses the space properly, gives you storage where you need it, and brings the warmth of solid wood into a room that is often all tile and porcelain.
 
-I make vanity units, washstands, tall storage, mirror cabinets and panelling to suit the room, in painted or natural timber. It's the same standard of joinery as my kitchens, finished to stand up to a steamy room.
+Joel makes vanity units, washstands, tall cupboards, mirror cabinets and panelling in painted or natural timber, finished to stand up to a busy family bathroom.

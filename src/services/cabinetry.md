@@ -3,21 +3,21 @@ title: Cabinetry & Storage
 metaTitle: "Fitted Wardrobes, Alcove Units & Bespoke Storage | Joel Dyter, Hebden Bridge"
 description: "Fitted wardrobes, alcove cupboards, under-stairs storage and shelving, handmade in solid timber by cabinet maker Joel Dyter in Hebden Bridge."
 category: Cabinetry & Storage
-heading: Wardrobes, cupboards & storage that fit
-intro: "Fitted wardrobes, alcove units, under-stairs cupboards, bookcases and shelving, made to use every inch of awkward space."
+heading: Wardrobes, cupboards and storage, made to fit
+intro: "Fitted wardrobes, alcove units, under-stairs cupboards, bookcases and shelving, designed to make good use of every awkward corner of your home."
 heroImage: /images/projects/under-stairs-storage/02.jpg
 heroAlt: Painted cupboards and drawers built under a staircase
 sideImage: /images/projects/black-oak-wardrobe/04.jpg
 sideAlt: Plank-door cupboard opened to show oak shelving
-workTitle: Cabinetry & storage
+workTitle: Recent cabinetry and storage
 highlights:
-  - title: Uses the awkward spaces
-    text: Under stairs, into eaves, either side of a chimney breast. These are the places where made-to-measure pays for itself.
-  - title: Drawers that last
-    text: Solid timber drawer boxes with dovetail joints, built to run smoothly for decades.
-  - title: Your finish
-    text: Hand-painted in any colour, oiled oak, walnut, or a mix like black plank doors over an oak interior.
+  - title: Space put to use
+    text: Under the stairs, into the eaves, beside the chimney breast. These are the places where made-to-measure storage makes the biggest difference.
+  - title: Built for daily use
+    text: Solid timber drawer boxes with dovetail joints, made to run smoothly for many years.
+  - title: Finished to suit the room
+    text: Hand-painted in any colour, oiled oak, walnut, or a combination such as painted doors over an oak interior.
 ---
-Good storage is invisible until you need it. Then it's exactly the right depth, the drawer runs sweetly, and everything has a place.
+Well-made storage changes how a house feels to live in. Clutter has a home, rooms feel calmer, and spaces that used to be wasted become genuinely useful.
 
-I make fitted wardrobes, alcove cupboards, bookcases, shelving, boot-room and under-stairs storage, designed around what you need to keep and the room it needs to fit. Older houses rarely have a straight wall, so everything is scribed in on site for a clean, built-in finish.
+Joel designs fitted wardrobes, alcove cupboards, bookcases, boot-room and under-stairs storage around what you need to keep and the room it needs to fit. Older houses rarely have a straight wall, so each piece is scribed on site for a neat, built-in finish.
