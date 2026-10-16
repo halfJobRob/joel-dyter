@@ -1,0 +1,25 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "@id": "{{ site.url }}/#business",
+  "name": "{{ site.name }}",
+  "description": "Handmade solid wood kitchens, cabinetry, staircases, windows and doors made in Hebden Bridge.",
+  "url": "{{ site.url }}/",
+  "telephone": "+44{{ site.phone | replace(' ', '') | replace('07', '7', 1) }}",
+  "email": "{{ site.email }}",
+  "foundingDate": "{{ site.established }}",
+  "founder": { "@type": "Person", "name": "Joel Dyter", "jobTitle": "Cabinet Maker" },
+  "image": "{{ site.url }}{% imageUrl '/images/projects/charcoal-shaker-kitchen/03.jpg', 1200 %}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ site.address.line1 }}, {{ site.address.line2 }}",
+    "addressLocality": "{{ site.address.town }}",
+    "addressRegion": "{{ site.address.county }}",
+    "postalCode": "{{ site.address.postcode }}",
+    "addressCountry": "GB"
+  },
+  "areaServed": {{ site.areas | json | safe }},
+  "sameAs": [{% set comma = joiner() %}{% for k, v in site.social %}{% if v %}{{ comma() }}"{{ v }}"{% endif %}{% endfor %}]
+}
+</script>

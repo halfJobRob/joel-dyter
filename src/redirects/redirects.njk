@@ -1,0 +1,13 @@
+---
+pagination:
+  data: redirects
+  size: 1
+  alias: r
+permalink: "{{ r.from }}/index.html"
+eleventyExcludeFromCollections: true
+redirects:
+  - { from: "/matrix2", to: "../projects/" }
+  - { from: "/services", to: "../reviews/" }
+  - { from: "/the_story", to: "../about/" }
+---
+<!doctype html><meta charset="utf-8"><title>Moved</title><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url={{ r.to }}"><a href="{{ r.to }}">This page has moved</a>

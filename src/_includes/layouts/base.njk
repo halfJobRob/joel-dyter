@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- set pageTitle = (metaTitle or (title + " | " + site.name)) if title else (site.name + " | Handmade Kitchens & Bespoke Joinery, Hebden Bridge") %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ description or 'Handmade solid wood kitchens, cabinetry, staircases, windows and doors, designed and made by master cabinet maker Joel Dyter in his Hebden Bridge workshop.' }}">
+  <link rel="canonical" href="{{ page.url | absoluteUrl(site.url) }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ description or site.tagline }}">
+  <meta property="og:url" content="{{ page.url | absoluteUrl(site.url) }}">
+  {%- set ogSrc = cover or ogImage or "/images/projects/charcoal-shaker-kitchen/03.jpg" %}
+  <meta property="og:image" content="{{ site.url }}{% imageUrl ogSrc, 1200 %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#2e3a35">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/cormorant.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/mulish.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  {% include "partials/schema.njk" %}
+</head>
+<body class="{{ bodyClass }}">
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include "partials/header.njk" %}
+  <main id="main">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+  {% include "partials/action-bar.njk" %}
+  {% include "partials/lightbox.njk" %}
+  {% if site.googleAnalyticsId %}{% include "partials/consent.njk" %}{% endif %}
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

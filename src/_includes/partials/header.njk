@@ -1,0 +1,30 @@
+<header class="site-header" data-header>
+  <div class="container site-header__inner">
+    <a class="site-header__brand" href="/" aria-label="{{ site.name }}, home">{% include "partials/logo.njk" %}</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="nav-toggle__bars" aria-hidden="true"></span><span class="visually-hidden">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main" data-nav>
+      <ul class="site-nav__list">
+        <li><a href="/kitchens/" {% if page.url == "/kitchens/" %}aria-current="page"{% endif %}>Kitchens</a></li>
+        <li class="has-sub">
+          <button type="button" class="site-nav__sub-toggle" aria-expanded="false" data-sub-toggle>Joinery <svg aria-hidden="true" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+          <ul class="site-nav__sub">
+            {%- for s in services %}{% if s.slug != "kitchens" %}
+            <li><a href="/{{ s.slug }}/" {% if page.url == "/" + s.slug + "/" %}aria-current="page"{% endif %}>{{ s.title }}</a></li>
+            {%- endif %}{% endfor %}
+          </ul>
+        </li>
+        <li><a href="/projects/" {% if "/projects/" in page.url %}aria-current="page"{% endif %}>Projects</a></li>
+        <li><a href="/about/" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About</a></li>
+        <li><a href="/reviews/" {% if page.url == "/reviews/" %}aria-current="page"{% endif %}>Reviews</a></li>
+        <li><a href="/prices/" {% if page.url == "/prices/" %}aria-current="page"{% endif %}>Prices</a></li>
+        <li class="site-nav__cta"><a class="btn btn--small" href="/contact/">Enquire</a></li>
+      </ul>
+      <div class="site-nav__contact">
+        <a href="{{ site.phone | telHref }}">{{ site.phone }}</a>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </div>
+    </nav>
+  </div>
+</header>

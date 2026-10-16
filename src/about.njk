@@ -1,0 +1,60 @@
+---
+layout: layouts/base.njk
+title: About Joel
+metaTitle: "About Joel Dyter, Cabinet Maker & Joiner in Hebden Bridge"
+description: "Joel Dyter has been a joiner and cabinet maker for over 36 years and has run his own workshop in the Calder Valley since 2000. How he works, from first visit to fitting."
+permalink: /about/
+ogImage: /images/site/hanging-sign.jpg
+---
+<header class="page-hero">
+  <div class="container page-hero__grid">
+    <div class="page-hero__text">
+      <p class="eyebrow">About</p>
+      <h1 class="page-title">One maker. Every joint, every scribe.</h1>
+      <p class="lede">I'm Joel Dyter. I've been a joiner and cabinet maker for more than {{ site.yearsTrade }} years, and I've run my own business since {{ site.established }}: first from a workshop in Old Town, and now from Unit 7 on the Pennine Industrial Estate in Hebden Bridge.</p>
+    </div>
+    <div class="page-hero__media">{% image "/images/site/hanging-sign.jpg", "Joel Dyter Cabinet Maker hanging sign outside the workshop", "(min-width: 900px) 45vw, 100vw", "", "eager" %}</div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container split split--reverse">
+    <div class="split__media">{% image "/images/projects/bespoke-oak-desk/03.jpg", "Hand-cut dovetails on a drawer box in the workshop", "(min-width: 900px) 45vw, 100vw" %}</div>
+    <div class="split__text prose">
+      <h2 class="section-title">Why one person, start to finish?</h2>
+      <p>I'm a one-man business, and that's deliberate. The person who comes to measure your room is the person who draws it, chooses the timber, cuts the joints and fits the last piece. Nothing gets lost between a salesperson, a designer and a fitting team, because there aren't any.</p>
+      <p>It also means I take on a limited number of projects at a time, and each one gets my full attention. I'd rather do fewer jobs properly than rush any of them.</p>
+      <p>The furniture I make uses the best materials and fittings I can get, and it's built to last. Traditional or contemporary, whether it's a whole kitchen or a single bookcase, I'd be glad to talk it through.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="container">
+    <p class="eyebrow eyebrow--light">How I work</p>
+    <h2 class="section-title">What to expect</h2>
+    <ol class="steps">
+      <li><h3>First conversation</h3><p>Tell me what you have in mind by phone, WhatsApp or the enquiry form. Photos of the space help a lot.</p></li>
+      <li><h3>Site visit</h3><p>I'll visit, measure everything myself and talk through how you'll use the room.</p></li>
+      <li><h3>Drawings &amp; a complete price</h3><p>Hand drawings so you can see it, and an itemised quote so there are no surprises.</p></li>
+      <li><h3>In the workshop</h3><p>Your piece is made in Hebden Bridge. I'll keep you posted on progress, with photos.</p></li>
+      <li><h3>Fitting &amp; finishing</h3><p>I fit everything myself and don't leave until it's right.</p></li>
+    </ol>
+    <p class="steps__note">{{ site.bookingNote }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="split__media">{% image "/images/site/workshop-sign.jpg", "Engraved oak Joel Dyter Cabinet Maker sign, established 2000", "(min-width: 900px) 45vw, 100vw" %}</div>
+    <div class="split__text prose">
+      <h2 class="section-title">The workshop</h2>
+      <p>Everything is made at my workshop in Hebden Bridge. You're welcome to visit by appointment to see work in progress, look at timber and finishes, or talk through drawings.</p>
+      <address class="address-block">{{ site.address.line1 }}<br>{{ site.address.line2 }}, {{ site.address.town }}<br>{{ site.address.county }} {{ site.address.postcode }}</address>
+      <p>I work across {{ site.areas | join(", ") }}.</p>
+    </div>
+  </div>
+</section>
+
+{% include "partials/testimonials-scroll.njk" %}
+{% include "partials/cta.njk" %}

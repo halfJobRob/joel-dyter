@@ -1,0 +1,10 @@
+<article class="card">
+  <a class="card__link" href="{{ p.url }}">
+    <div class="card__media">{% image p.data.cover, p.data.coverAlt or p.data.title, "(min-width: 1100px) 30vw, (min-width: 640px) 45vw, 92vw" %}</div>
+    <div class="card__body">
+      <p class="eyebrow">{{ p.data.category }}{% if p.data.location %} <span aria-hidden="true">·</span> {{ p.data.location }}{% endif %}</p>
+      <h3 class="card__title">{{ p.data.title }}</h3>
+      {%- if p.data.stages | length > 1 %}<p class="card__meta">{{ p.data.stages | length }}-stage story: {% for s in p.data.stages %}{{ s.stage }}{% if not loop.last %} → {% endif %}{% endfor %}</p>{% endif %}
+    </div>
+  </a>
+</article>

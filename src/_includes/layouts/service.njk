@@ -1,0 +1,85 @@
+---
+layout: layouts/base.njk
+---
+{%- set related = collections.projects | byCategory(category) -%}
+<header class="page-hero">
+  <div class="container page-hero__grid">
+    <div class="page-hero__text">
+      <p class="eyebrow">{{ eyebrow or "Handmade in Hebden Bridge" }}</p>
+      <h1 class="page-title">{{ heading or title }}</h1>
+      <p class="lede">{{ intro }}</p>
+      <div class="btn-row">
+        <a class="btn" href="/contact/">Discuss your project</a>
+        {% if related | length %}<a class="btn btn--ghost" href="#work">See the work</a>{% endif %}
+      </div>
+    </div>
+    <div class="page-hero__media">{% image heroImage, heroAlt, "(min-width: 900px) 50vw, 100vw", "", "eager" %}</div>
+  </div>
+</header>
+
+{% if highlights %}
+<section class="section">
+  <div class="container">
+    <ul class="highlights">
+      {%- for h in highlights %}
+      <li><h2 class="highlights__title">{{ h.title }}</h2><p>{{ h.text }}</p></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+<section class="section section--tint">
+  <div class="container prose-wrap prose-wrap--split">
+    <div class="prose">{{ content | safe }}</div>
+    {% if sideImage %}<div class="prose-wrap__media">{% image sideImage, sideAlt, "(min-width: 900px) 40vw, 100vw" %}</div>{% endif %}
+  </div>
+</section>
+
+{% if showPricing %}{% include "partials/pricing-summary.njk" %}{% endif %}
+
+{% if related | length %}
+<section class="section" id="work">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">{{ workTitle or ("Recent " + title | lower) }}</h2>
+      <a class="text-link" href="/projects/">All projects</a>
+    </div>
+    <div class="cards">
+      {% asyncEach p in related %}{% include "partials/project-card.njk" %}{% endeach %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if gallery %}
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">More {{ title | lower }}</h2>
+    <div class="masonry" data-gallery>
+      {%- asyncEach g in gallery %}
+      <a class="masonry__item" href="{% imageUrl g.image %}" data-lightbox-item data-caption="{{ g.alt }}">{% image g.image, g.alt, "(min-width: 900px) 30vw, 50vw" %}</a>
+      {%- endeach %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% if faqs %}
+<section class="section section--tint">
+  <div class="container narrow">
+    <h2 class="section-title">Questions people ask</h2>
+    <div class="faqs">
+      {%- for f in faqs %}
+      <details class="faq"><summary>{{ f.q }}</summary><p>{{ f.a }}</p></details>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for f in faqs %}{"@type":"Question","name":{{ f.q | json | safe }},"acceptedAnswer":{"@type":"Answer","text":{{ f.a | json | safe }}}}{% if not loop.last %},{% endif %}{% endfor %}]}
+</script>
+{% endif %}
+
+{% include "partials/testimonials-scroll.njk" %}
+{% include "partials/cta.njk" %}

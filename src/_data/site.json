@@ -1,0 +1,30 @@
+{
+  "name": "Joel Dyter Cabinet Maker",
+  "shortName": "Joel Dyter",
+  "tagline": "Handmade kitchens & bespoke joinery",
+  "url": "https://www.joeldyter.co.uk",
+  "phone": "07801 720712",
+  "whatsapp": "07801 720712",
+  "whatsappMessage": "Hi Joel, I found you through your website and I'd like to talk about a project.",
+  "email": "mail@joeldyter.co.uk",
+  "address": {
+    "line1": "Unit 7, Pennine Industrial Estate",
+    "line2": "Valley Road",
+    "town": "Hebden Bridge",
+    "county": "West Yorkshire",
+    "postcode": "HX7 7BZ"
+  },
+  "established": 2000,
+  "yearsTrade": 36,
+  "areas": ["Hebden Bridge", "Heptonstall", "Mytholmroyd", "Todmorden", "Luddenden", "Sowerby Bridge", "Halifax", "Warley", "the wider Calder Valley"],
+  "bookingNote": "Lead times vary with the size of the job. Get in touch to ask about current availability.",
+  "social": {
+    "instagram": "https://www.instagram.com/joeldytercabinetmaker/",
+    "facebook": "https://www.facebook.com/joeldytercabinetmaker/",
+    "pinterest": ""
+  },
+  "googleReviewUrl": "",
+  "googleAnalyticsId": "",
+  "formAction": "/enquiry.php",
+  "demoHosts": ["github.io", "localhost", "127.0.0.1"]
+}

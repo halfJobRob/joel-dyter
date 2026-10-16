@@ -1,0 +1,21 @@
+{%- if not pricing.confirmed %}<p class="draft-flag" role="note"><strong>Example figures:</strong> these prices are placeholders for Joel to confirm before launch.</p>{% endif %}
+<div class="price-grid">
+  <div class="price-table">
+    <h3>Cabinets</h3>
+    <dl>
+      {%- for r in pricing.cabinets %}
+      <div class="price-row"><dt>{{ r.item }}</dt><dd>{% if r.from %}from <strong>{{ r.from | gbp }}</strong> <span>{{ r.unit }}</span>{% else %}<span>{{ r.unit }}</span>{% endif %}</dd></div>
+      {%- endfor %}
+    </dl>
+  </div>
+  <div class="price-table">
+    <h3>Worktops</h3>
+    <dl>
+      {%- for r in pricing.worktops %}
+      <div class="price-row"><dt>{{ r.item }}</dt><dd>{% if r.from %}from <strong>{{ r.from | gbp }}</strong> <span>{{ r.unit }}</span>{% else %}<span>{{ r.unit }}</span>{% endif %}</dd></div>
+      {%- endfor %}
+    </dl>
+  </div>
+</div>
+<p class="price-typical">{{ pricing.typical }}</p>
+<p class="small">{{ pricing.footnote }}</p>

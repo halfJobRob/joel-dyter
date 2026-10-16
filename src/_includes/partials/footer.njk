@@ -1,0 +1,42 @@
+{%- from "partials/icons.njk" import icon -%}
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      {% include "partials/logo.njk" %}
+      <p>Handmade kitchens, cabinetry, staircases, windows and doors, designed and made by Joel in his Hebden Bridge workshop.</p>
+      <ul class="social" aria-label="Joel Dyter on social media">
+        <li><a href="{{ site.whatsapp | whatsappHref(site.whatsappMessage) }}" target="_blank" rel="noopener">{{ icon("whatsapp") }}<span class="visually-hidden">WhatsApp</span></a></li>
+        {%- if site.social.instagram %}<li><a href="{{ site.social.instagram }}" target="_blank" rel="noopener">{{ icon("instagram") }}<span class="visually-hidden">Instagram</span></a></li>{% endif %}
+        {%- if site.social.facebook %}<li><a href="{{ site.social.facebook }}" target="_blank" rel="noopener">{{ icon("facebook") }}<span class="visually-hidden">Facebook</span></a></li>{% endif %}
+        {%- if site.social.pinterest %}<li><a href="{{ site.social.pinterest }}" target="_blank" rel="noopener">{{ icon("pinterest") }}<span class="visually-hidden">Pinterest</span></a></li>{% endif %}
+      </ul>
+    </div>
+    <div>
+      <h2 class="site-footer__heading">What I make</h2>
+      <ul class="site-footer__links">
+        {%- for s in services %}<li><a href="/{{ s.slug }}/">{{ s.title }}</a></li>{% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2 class="site-footer__heading">Explore</h2>
+      <ul class="site-footer__links">
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/about/">About &amp; how I work</a></li>
+        <li><a href="/reviews/">Reviews</a></li>
+        <li><a href="/prices/">Prices</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="site-footer__heading">Workshop</h2>
+      <address>
+        {{ site.address.line1 }}<br>{{ site.address.line2 }}<br>{{ site.address.town }}<br>{{ site.address.county }} {{ site.address.postcode }}
+      </address>
+      <p><a href="{{ site.phone | telHref }}">{{ site.phone }}</a><br><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p class="small">Visits to the workshop by appointment.</p>
+    </div>
+  </div>
+  <div class="container site-footer__base">
+    <p>&copy; {{ "" | year }} Joel Dyter Cabinet Maker. All work designed and handmade in Hebden Bridge.</p>
+  </div>
+</footer>

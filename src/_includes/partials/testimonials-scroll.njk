@@ -1,0 +1,21 @@
+<section class="reviews-band" aria-labelledby="reviews-band-title">
+  <div class="container">
+    <p class="eyebrow">In clients' words</p>
+    <h2 id="reviews-band-title" class="section-title">“Every drawer closes with a sigh”</h2>
+  </div>
+  <div class="marquee" data-marquee>
+    <ul class="marquee__track">
+      {%- for t in testimonials.items %}
+      <li class="quote-card">
+        <div class="stars" aria-label="Five out of five">★★★★★</div>
+        <blockquote><p>{{ t.excerpt }}</p></blockquote>
+        <p class="quote-card__who">{{ t.name }}{% if t.place %}<span>{{ t.place }}</span>{% endif %}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+  <div class="container reviews-band__actions">
+    <a class="btn btn--ghost" href="/reviews/">Read the full reviews</a>
+    {%- if site.googleReviewUrl %}<a class="text-link" href="{{ site.googleReviewUrl }}" target="_blank" rel="noopener">See Joel on Google</a>{% endif %}
+  </div>
+</section>

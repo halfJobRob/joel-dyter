@@ -1,0 +1,15 @@
+{%- from "partials/icons.njk" import icon -%}
+<section class="cta">
+  <div class="container cta__inner">
+    <div>
+      <p class="eyebrow eyebrow--light">Start a conversation</p>
+      <h2 class="cta__title">{{ ctaTitle or "Tell me about your room" }}</h2>
+      <p>Send a few photos and rough measurements, or just a description of what you have in mind. I'll come back to you personally. There's no sales team here.</p>
+    </div>
+    <div class="cta__actions">
+      <a class="btn btn--light" href="/contact/">Send an enquiry</a>
+      <a class="btn btn--wa" href="{{ site.whatsapp | whatsappHref(site.whatsappMessage) }}" target="_blank" rel="noopener">{{ icon("whatsapp") }} WhatsApp Joel</a>
+      <a class="cta__phone" href="{{ site.phone | telHref }}">or call {{ site.phone }}</a>
+    </div>
+  </div>
+</section>

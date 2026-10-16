@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+title: Projects
+metaTitle: "Projects: Handmade Kitchens, Furniture & Joinery | Joel Dyter, Hebden Bridge"
+description: "Kitchens, staircases, furniture and joinery handmade by Joel Dyter. Follow projects from hand drawing, through the workshop, to the finished room."
+permalink: /projects/
+---
+<header class="page-hero page-hero--plain">
+  <div class="container">
+    <p class="eyebrow">Projects</p>
+    <h1 class="page-title">From the drawing board to your home</h1>
+    <p class="lede">A selection of recent work. Where you see a stage count, the project page follows the piece from drawing, through the workshop, to the finished room.</p>
+  </div>
+</header>
+<section class="section section--tight">
+  <div class="container">
+    {%- set cats = collections.projects | categories -%}
+    <div class="filters" role="group" aria-label="Filter projects" data-filters hidden>
+      <button type="button" class="filter is-active" aria-pressed="true" data-filter="all">All</button>
+      {%- for c in cats %}<button type="button" class="filter" aria-pressed="false" data-filter="{{ c }}">{{ c }}</button>{% endfor %}
+    </div>
+    <ul class="cards cards--list" data-filter-list>
+      {%- asyncEach p in collections.projects %}<li data-category="{{ p.data.category }}">{% include "partials/project-card.njk" %}</li>{% endeach %}
+    </ul>
+  </div>
+</section>
+{% include "partials/cta.njk" %}

@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: Reviews
+metaTitle: "Reviews & Testimonials | Joel Dyter Cabinet Maker, Hebden Bridge"
+description: "What clients say about Joel Dyter's handmade kitchens, staircases, doors and furniture."
+permalink: /reviews/
+---
+<header class="page-hero page-hero--plain">
+  <div class="container">
+    <p class="eyebrow">Reviews</p>
+    <h1 class="page-title">In clients' own words</h1>
+    <p class="lede">Most of my work comes by word of mouth. Here's what some of my clients have said.</p>
+    {% if site.googleReviewUrl %}<p><a class="btn btn--ghost" href="{{ site.googleReviewUrl }}" target="_blank" rel="noopener">Read &amp; leave reviews on Google</a></p>{% endif %}
+  </div>
+</header>
+<section class="section section--tight">
+  <div class="container reviews-list">
+    {%- for t in testimonials.items %}
+    <figure class="review">
+      <div class="stars" aria-label="Five out of five">★★★★★</div>
+      <blockquote>{% for para in t.quote.split("\n\n") %}<p>{{ para }}</p>{% endfor %}</blockquote>
+      <figcaption>
+        <strong>{{ t.name }}</strong>{% if t.place %}, {{ t.place }}{% endif %}
+        {%- if t.project %} · <a href="/projects/{{ t.project }}/">see the project</a>{% endif %}
+      </figcaption>
+    </figure>
+    {%- endfor %}
+  </div>
+</section>
+{% include "partials/cta.njk" %}

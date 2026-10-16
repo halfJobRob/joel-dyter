@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+title: Prices
+metaTitle: "Handmade Kitchen Prices & Guide Costs | Joel Dyter, Hebden Bridge"
+description: "Guide prices for handmade kitchens from Joel Dyter: cost per cabinet, per metre of worktop, and typical complete kitchen budgets."
+permalink: /prices/
+---
+<header class="page-hero page-hero--plain">
+  <div class="container">
+    <p class="eyebrow">Prices</p>
+    <h1 class="page-title">What does a handmade kitchen cost?</h1>
+    <p class="lede">{{ pricing.intro }}</p>
+  </div>
+</header>
+<section class="section section--tight">
+  <div class="container">
+    {% include "partials/pricing-tables.njk" %}
+  </div>
+</section>
+<section class="section section--tint">
+  <div class="container narrow prose">
+    <h2 class="section-title">What affects the price?</h2>
+    <ul>
+      <li><strong>Size and layout:</strong> the number of cabinets, and how many are drawers rather than doors.</li>
+      <li><strong>Timber and finish:</strong> hand-painted, oiled oak, walnut or a mix.</li>
+      <li><strong>The room:</strong> old houses with uneven walls and floors take more scribing and fitting time.</li>
+      <li><strong>Extras:</strong> islands, larders, plate racks, dressers and appliance housings.</li>
+      <li><strong>Other trades:</strong> whether you'd like me to manage plumbing, electrics, flooring or building work.</li>
+    </ul>
+    <p>The best way to get a real figure is a short conversation and a site visit. Send a few photos and rough measurements and I'll tell you honestly whether it fits your budget.</p>
+  </div>
+</section>
+{% include "partials/cta.njk" %}

@@ -1,0 +1,134 @@
+# Website editor (Sveltia CMS). Changes are saved to GitHub, and the site rebuilds itself in a minute or two.
+backend:
+  name: github
+  repo: halfJobRob/joel-dyter # <-- change to the real GitHub "owner/repository"
+  branch: main
+  commit_messages:
+    create: "Add {{collection}}: {{slug}}"
+    update: "Update {{collection}}: {{slug}}"
+    delete: "Remove {{collection}}: {{slug}}"
+    uploadMedia: "Upload photo {{path}}"
+
+site_url: https://www.joeldyter.co.uk
+logo_url: /favicon.svg
+media_folder: src/uploads
+public_folder: /uploads
+
+# Big phone photos are shrunk before upload, so they are quick to send and quick to load.
+media_libraries:
+  default:
+    config:
+      max_file_size: 25000000
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 2400
+          height: 2400
+
+collections:
+  - name: projects
+    label: Projects
+    label_singular: Project
+    description: Your portfolio. Each project gets its own page. Add photos in stages (Design → Making → Installed) to tell the story.
+    folder: src/projects
+    extension: md
+    format: frontmatter
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}} · {{category}}"
+    sortable_fields: [date, title, category]
+    view_filters:
+      - { label: Kitchens, field: category, pattern: Kitchens }
+      - { label: Featured on home page, field: featured, pattern: true }
+    fields:
+      - { name: title, label: Title, widget: string, hint: "e.g. Oak kitchen with painted island" }
+      - { name: location, label: Location, widget: string, required: false, hint: "Town or village, e.g. Heptonstall. Leave blank if the client prefers." }
+      - name: category
+        label: Category
+        widget: select
+        options: [Kitchens, Bathrooms, "Cabinetry & Storage", Furniture, Staircases, "Windows, Doors & Joinery", Commercial]
+      - { name: date, label: Date finished, widget: datetime, time_format: false, date_format: "DD/MM/YYYY", format: "YYYY-MM-DD", hint: "Used to put newest projects first. Not shown on the site." }
+      - { name: featured, label: Show on the home page, widget: boolean, default: false, hint: "The 6 newest featured projects appear on the home page." }
+      - { name: cover, label: Main photo, widget: image, hint: "The photo shown on the project card. Your best finished shot." }
+      - { name: coverAlt, label: Describe the main photo, widget: string, hint: "One short sentence for Google and screen readers, e.g. 'Painted oak kitchen with Belfast sink'." }
+      - { name: summary, label: Short summary, widget: text, hint: "One or two sentences shown under the title." }
+      - name: stages
+        label: Photo stages
+        label_singular: Stage
+        widget: list
+        hint: "Add one stage for a simple gallery, or several (Design, Making, Installed) to tell the story."
+        summary: "{{fields.stage}}"
+        fields:
+          - name: stage
+            label: Stage
+            widget: select
+            options: [Design, Making, Finishing, Fitting, Fitted, Installed, Details]
+            default: Installed
+          - { name: caption, label: What's happening at this stage?, widget: text, required: false }
+          - name: photos
+            label: Photos
+            label_singular: Photo
+            widget: list
+            summary: "{{fields.alt}}"
+            fields:
+              - { name: image, label: Photo, widget: image }
+              - { name: alt, label: Describe the photo, widget: string, required: false }
+      - name: compare
+        label: Drawing vs finished slider (optional)
+        widget: object
+        required: false
+        collapsed: true
+        hint: "Pick your sketch and a finished photo of the same view. Visitors drag a slider between them."
+        fields:
+          - { name: title, label: Heading, widget: string, required: false, default: "From pencil sketch to finished kitchen" }
+          - { name: before, label: Drawing, widget: image, required: false }
+          - { name: beforeAlt, label: Describe the drawing, widget: string, required: false }
+          - { name: after, label: Finished photo, widget: image, required: false }
+          - { name: afterAlt, label: Describe the finished photo, widget: string, required: false }
+      - { name: body, label: The story (optional), widget: markdown, required: false, hint: "A few paragraphs about the brief, the timber and anything special about the job." }
+
+  - name: content
+    label: Reviews & prices
+    files:
+      - name: testimonials
+        label: Reviews
+        file: src/_data/testimonials.json
+        fields:
+          - name: items
+            label: Reviews
+            label_singular: Review
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { name: name, label: Client name, widget: string }
+              - { name: place, label: Place or house, widget: string, required: false }
+              - { name: excerpt, label: Short quote (for the scrolling reviews), widget: text, hint: "One or two of the best sentences." }
+              - { name: quote, label: Full review, widget: text }
+              - { name: project, label: Linked project (optional), widget: relation, collection: projects, value_field: "{{slug}}", search_fields: [title], display_fields: [title], required: false }
+              - { name: source, label: Source, widget: select, options: [Testimonial, Google, Facebook, Houzz], default: Testimonial }
+      - name: pricing
+        label: Prices
+        file: src/_data/pricing.json
+        fields:
+          - { name: confirmed, label: Prices confirmed (hides the 'example figures' notice), widget: boolean, default: false }
+          - { name: intro, label: Intro, widget: text }
+          - name: cabinets
+            label: Cabinet prices
+            widget: list
+            summary: "{{fields.item}}: from £{{fields.from}}"
+            fields:
+              - { name: item, label: Item, widget: string }
+              - { name: from, label: From (£), widget: number, value_type: int, hint: "Use 0 to show the unit text only, e.g. 'quoted per job'." }
+              - { name: unit, label: Unit, widget: string }
+          - name: worktops
+            label: Worktop prices
+            widget: list
+            summary: "{{fields.item}}: from £{{fields.from}}"
+            fields:
+              - { name: item, label: Item, widget: string }
+              - { name: from, label: From (£), widget: number, value_type: int }
+              - { name: unit, label: Unit, widget: string }
+          - { name: typical, label: Typical kitchen budget, widget: text }
+          - { name: footnote, label: Small print, widget: text }

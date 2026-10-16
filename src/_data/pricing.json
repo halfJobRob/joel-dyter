@@ -1,0 +1,17 @@
+{
+  "confirmed": false,
+  "intro": "Every piece is made to measure, so every quote is individual. These guide prices give you a sense of the investment before we talk.",
+  "cabinets": [
+    { "item": "Base cabinet, 600mm, hand-painted, with solid wood dovetailed drawer or door", "from": 650, "unit": "per cabinet" },
+    { "item": "Wall cabinet, 600mm, hand-painted", "from": 450, "unit": "per cabinet" },
+    { "item": "Tall larder or appliance housing", "from": 1800, "unit": "per cabinet" },
+    { "item": "Freestanding island or dresser", "from": 3500, "unit": "each" }
+  ],
+  "worktops": [
+    { "item": "Solid oak, 40mm, oiled", "from": 280, "unit": "per metre, made & fitted" },
+    { "item": "Walnut or iroko, 40mm", "from": 450, "unit": "per metre, made & fitted" },
+    { "item": "Stone (granite or quartz), templated by specialist, fitted alongside the kitchen", "from": 0, "unit": "quoted per job" }
+  ],
+  "typical": "Most complete handmade kitchens fall between £15,000 and £35,000, depending on size, timber and finish.",
+  "footnote": "Prices include design, making and fitting, and exclude appliances, plumbing, electrics and tiling. Every quote is fixed and itemised after a site visit."
+}

@@ -1,0 +1,95 @@
+---
+layout: layouts/base.njk
+---
+{%- set journey = stages and (stages | length > 1) -%}
+<article class="project">
+  <header class="project-hero">
+    <div class="container project-hero__grid">
+      <div class="project-hero__text">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/projects/">Projects</a> <span aria-hidden="true">/</span> {{ category }}</nav>
+        <h1 class="page-title">{{ title }}</h1>
+        {% if location %}<p class="project-hero__loc">{{ location }}</p>{% endif %}
+        {% if summary %}<p class="lede">{{ summary }}</p>{% endif %}
+        {% if journey %}
+        <ol class="stepper" aria-label="Project stages">
+          {%- for s in stages %}<li><a href="#stage-{{ loop.index }}"><span class="stepper__n">{{ loop.index }}</span>{{ s.stage }}</a></li>{% endfor %}
+        </ol>
+        {% endif %}
+      </div>
+      <div class="project-hero__media">
+        <a href="{% imageUrl cover %}" data-lightbox-item data-caption="{{ coverAlt or title }}">{% image cover, coverAlt or title, "(min-width: 900px) 55vw, 100vw", "", "eager" %}</a>
+      </div>
+    </div>
+  </header>
+
+  {% if content | trim %}
+  <section class="section section--tight">
+    <div class="container narrow prose">{{ content | safe }}</div>
+  </section>
+  {% endif %}
+
+  {% if compare and compare.before and compare.after %}
+  <section class="section section--tight">
+    <div class="container narrow">
+      <h2 class="section-title section-title--small">{{ compare.title or "From drawing to kitchen" }}</h2>
+      <div class="compare" data-compare style="--pos: 50%">
+        {% image compare.after, compare.afterAlt or "Finished", "(min-width: 900px) 760px, 100vw", "compare__img" %}
+        <div class="compare__before">{% image compare.before, compare.beforeAlt or "Drawing", "(min-width: 900px) 760px, 100vw", "compare__img" %}</div>
+        <span class="compare__handle" aria-hidden="true"></span>
+        <span class="compare__tag compare__tag--before">{{ compare.beforeLabel or "Design" }}</span>
+        <span class="compare__tag compare__tag--after">{{ compare.afterLabel or "Installed" }}</span>
+        <input class="compare__range" type="range" min="0" max="100" value="50" aria-label="Drag to compare the drawing with the finished room" data-compare-range>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if stages %}
+  <section class="section {% if journey %}journey{% endif %}" aria-label="{% if journey %}The journey{% else %}Photos{% endif %}">
+    <div class="container">
+      {% if journey %}<h2 class="section-title">The journey</h2>{% endif %}
+      <div class="{% if journey %}journey__track{% endif %}" data-gallery>
+        {%- asyncEach s in stages %}
+        <section class="stage" id="stage-{{ loop.index }}">
+          {% if journey %}
+          <header class="stage__head">
+            <span class="stage__n">{{ loop.index }}</span>
+            <h3 class="stage__title">{{ s.stage }}</h3>
+          </header>
+          {% endif %}
+          {% if s.caption %}<p class="stage__caption">{{ s.caption }}</p>{% endif %}
+          <div class="stage__photos stage__photos--{{ s.photos | length if s.photos | length < 4 else 'many' }}">
+            {%- asyncEach ph in s.photos %}
+            <a class="stage__photo" href="{% imageUrl ph.image %}" data-lightbox-item data-caption="{{ s.stage }}{% if ph.alt %}: {{ ph.alt }}{% endif %}">{% image ph.image, ph.alt or (title + ", " + s.stage), "(min-width: 900px) 40vw, 85vw" %}</a>
+            {%- endeach %}
+          </div>
+        </section>
+        {%- endeach %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {%- for t in testimonials.items %}{% if t.project and t.project == page.fileSlug %}
+  <section class="section section--tint">
+    <figure class="container narrow big-quote">
+      <blockquote><p>{{ t.excerpt }}</p></blockquote>
+      <figcaption>{{ t.name }}{% if t.place %}, {{ t.place }}{% endif %} · <a href="/reviews/">read in full</a></figcaption>
+    </figure>
+  </section>
+  {% endif %}{% endfor %}
+
+  {%- set others = collections.projects | byCategory(category) | exceptUrl(page.url) | limit(3) -%}
+  {% if others | length %}
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2 class="section-title">More {{ category | lower }}</h2><a class="text-link" href="/projects/">All projects</a></div>
+      <div class="cards">
+        {%- asyncEach p in others %}{% include "partials/project-card.njk" %}{% endeach %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+</article>
+{% set ctaTitle = "Like this? Let's talk about yours" %}
+{% include "partials/cta.njk" %}

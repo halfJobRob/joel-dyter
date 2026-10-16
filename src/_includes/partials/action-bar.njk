@@ -1,0 +1,9 @@
+{%- from "partials/icons.njk" import icon -%}
+<div class="action-bar" aria-label="Quick contact">
+  <a class="action-bar__item" href="{{ site.phone | telHref }}">{{ icon("phone", 20) }}<span>Call</span></a>
+  <a class="action-bar__item action-bar__item--wa" href="{{ site.whatsapp | whatsappHref(site.whatsappMessage) }}" target="_blank" rel="noopener">{{ icon("whatsapp", 20) }}<span>WhatsApp</span></a>
+  <a class="action-bar__item action-bar__item--primary" href="/contact/">{{ icon("mail", 20) }}<span>Enquire</span></a>
+</div>
+<a class="wa-float" href="{{ site.whatsapp | whatsappHref(site.whatsappMessage) }}" target="_blank" rel="noopener" aria-label="Chat with Joel on WhatsApp">
+  {{ icon("whatsapp", 26) }}<span class="wa-float__label">Chat on WhatsApp</span>
+</a>
