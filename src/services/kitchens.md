@@ -3,19 +3,19 @@ title: Handmade Kitchens
 metaTitle: "Handmade Kitchens in Hebden Bridge & the Calder Valley | Joel Dyter"
 description: "Bespoke solid wood kitchens designed, handmade and fitted by cabinet maker Joel Dyter. Painted Shaker, oak and classic country kitchens for homes across the Calder Valley."
 category: Kitchens
-heading: Handmade kitchens, designed around your home
-intro: "A kitchen made in solid timber for your room, whether that means painted Shaker doors, natural oak or something more contemporary. Designed with you, made in the workshop and fitted by hand."
+heading: A kitchen you won't find in any showroom
+intro: "Showroom kitchens are built to standard sizes. Joel's are made in solid timber to fit your room exactly, in a hand-painted, sprayed or natural finish, and designed around the way you cook, eat and live."
 heroImage: /images/projects/holland-kitchen-heptonstall/01.jpg
 heroAlt: Painted cottage kitchen with oak worktops in Heptonstall
 sideImage: /images/projects/shaw-road-kitchen/02.jpg
 sideAlt: Plate rack built into a painted wall cupboard
 showPricing: true
-workTitle: Recent kitchens
+workTitle: Kitchens from the workshop
 highlights:
   - title: Materials that last
-    text: Solid timber frames and doors, quality boards and hand-dovetailed drawers. A kitchen built this way can be repainted and refreshed for decades rather than replaced.
-  - title: Made for the room
-    text: Units are sized to your walls rather than to a catalogue, so alcoves, chimney breasts and uneven floors become part of the design.
+    text: Solid timber frames and doors, and hand-dovetailed drawers. A kitchen built this way can be repainted and refreshed for decades rather than replaced.
+  - title: Given the time it needs
+    text: Joel takes on only a few projects at a time, so each kitchen is made without hurrying, from the dovetails to the final scribe against your wall.
   - title: One point of contact
     text: The same craftsman measures, designs, makes and fits your kitchen, and you receive a clear price for the build before any work starts.
 faqs:
@@ -45,8 +45,12 @@ gallery:
   - image: /images/gallery/04.jpg
     alt: Yellow painted kitchen with Belfast sink
 ---
-The kitchen is where most homes are really lived in, so it needs to work hard and still feel good to be in years from now. A handmade kitchen gives you the layout you actually want, in materials that age well: oak worktops that gain character with use, painted doors that can be refreshed in a new colour, and drawers that run as smoothly in twenty years as they do on the first day.
+The kitchen is where most homes are really lived in.
 
-Every project starts with a visit to understand the room and how you use it, from where the range sits to where everyone tends to gather. Joel then draws the kitchen by hand, so you can see the proportions and details before any timber is cut.
+It's where the day begins, the morning sun beaming in and the smell of freshly ground coffee. Chats over a cuppa, waiting for that bake, dishing up a roast, and ***it's where you'll always find us at a party.***
 
-The kitchen is made in the Hebden Bridge workshop and fitted by Joel himself, with each unit scribed to the walls and floor. The aim is a kitchen that looks as though it has always been part of the house.
+A room that does all that should be made to last. A handmade kitchen gives you the layout you actually want, in materials that age well: oak worktops that gain character with use, painted doors that can be refreshed in a new colour, and ***drawers that run as smoothly in twenty years as they do on the first day***.
+
+Joel visits to see the room and how you use it, from where the range sits to where everyone tends to gather. ***Alcoves, chimney breasts and uneven floors become part of the design*** rather than problems to work around. He then draws the kitchen up, so you can see the proportions and details before any timber is cut.
+
+The kitchen is made in the Hebden Bridge workshop and fitted by Joel himself, with each unit scribed to the walls and floor. The aim is ***a kitchen that looks as though it has always been part of the house***.
