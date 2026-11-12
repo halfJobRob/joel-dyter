@@ -17,7 +17,7 @@ highlights:
   - title: Made for the room
     text: Units are sized to your walls rather than to a catalogue, so alcoves, chimney breasts and uneven floors become part of the design.
   - title: One point of contact
-    text: The same craftsman measures, designs, makes and fits your kitchen, and you receive a complete, itemised price at the outset.
+    text: The same craftsman measures, designs, makes and fits your kitchen, and you receive a clear price for the build before any work starts.
 faqs:
   - q: Do you design the kitchen as well as make it?
     a: Yes. Joel measures the room, talks through how you use it and produces hand drawings before anything is made. Changes are easy at the drawing stage, which is the right time to make them.

@@ -66,12 +66,16 @@ bodyClass: page-home
   <div class="container split">
     <div class="split__media">{% image "/images/site/dovetail-drawer.jpg", "Hand-cut dovetails on a solid timber drawer", "(min-width: 900px) 45vw, 100vw" %}</div>
     <div class="split__text prose">
-      <p class="eyebrow">Craftsmanship &amp; materials</p>
-      <h2 class="section-title">Built by hand, fitted with care</h2>
-      <p>Good joinery should feel as though it has always belonged in the house. Solid timber, hand-cut joints and careful fitting give you furniture that is a pleasure to use every day, and that wears in rather than wears out.</p>
-      <p>Joel has worked as a joiner and cabinet maker for more than {{ site.yearsTrade }} years, and has run his own workshop in the Calder Valley since {{ site.established }}. He measures, designs, makes and fits each piece himself, so the person who listens to your ideas at the start is the same person who fits the last cupboard to your wall.</p>
-      <p>Many homes here have uneven stone walls and old flagged floors. Each piece is shaped to sit naturally within them, which is where made-to-measure work really earns its place.</p>
-      <p><a class="text-link" href="/about/">About Joel and how he works {{ icon("arrow", 16) }}</a></p>
+      <p class="eyebrow">How Joel works</p>
+      <h2 class="section-title">Fewer projects, each given the time it deserves</h2>
+      <figure class="pull-quote">
+        <blockquote><p>“I would rather do fewer jobs than hurry any of them.”</p></blockquote>
+        <figcaption>Joel Dyter</figcaption>
+      </figure>
+      <p>Joel takes on only a few projects at a time, so each one gets his full attention, from the first drawing to the final fitting. Timber is chosen with care, joints are cut by hand, and every piece is given the time it needs to be made properly, so it wears in rather than wears out.</p>
+      <p>He has worked as a joiner and cabinet maker for more than {{ site.yearsTrade }} years, and has run his own workshop in the Calder Valley since {{ site.established }}. Because he designs, makes and fits everything himself, the person who listens to your ideas at the start is the same person who fits the last cupboard to your wall.</p>
+      <p>Many homes here have uneven stone walls and old flagged floors. Taking the time to scribe each piece to them is what makes it look as though it has always been there.</p>
+      <p><a class="text-link" href="/about/">More about Joel and the process, start to finish {{ icon("arrow", 16) }}</a></p>
     </div>
   </div>
 </section>
@@ -80,10 +84,10 @@ bodyClass: page-home
   <div class="container">
     <div class="section-head">
       <div>
-        <p class="eyebrow">Recent work</p>
-        <h2 class="section-title">Recent projects</h2>
+        <p class="eyebrow">Portfolio</p>
+        <h2 class="section-title">Kitchens, staircases and furniture from the workshop</h2>
       </div>
-      <a class="text-link" href="/projects/">All projects</a>
+      <a class="text-link" href="/projects/">See all projects</a>
     </div>
     <div class="cards">
       {%- asyncEach p in collections.projects | featured | limit(6) %}{% include "partials/project-card.njk" %}{% endeach %}
@@ -93,13 +97,15 @@ bodyClass: page-home
 
 <section class="section section--dark">
   <div class="container">
-    <p class="eyebrow eyebrow--light">How it works</p>
-    <h2 class="section-title">How a project comes together</h2>
+    <p class="eyebrow eyebrow--light">The process</p>
+    <h2 class="section-title">From first conversation to final fitting</h2>
     <ol class="steps">
-      <li><h3>First conversation</h3><p>Get in touch by phone, WhatsApp or the enquiry form. A few photos of the room and a rough budget help Joel give you a useful answer.</p></li>
-      <li><h3>Visit &amp; measure</h3><p>Joel visits to see the space, take measurements and talk through how you use the room day to day.</p></li>
-      <li><h3>Drawings &amp; quotation</h3><p>You receive hand drawings of the design and a full, itemised price, so you can see what you are getting before you commit.</p></li>
-      <li><h3>Making</h3><p>Everything is made in the Hebden Bridge workshop, with progress photos along the way if you would like them.</p></li>
+      <li><h3>Conversation</h3><p>Get in touch by phone, WhatsApp or the enquiry form to talk through what you have in mind.</p></li>
+      <li><h3>Photos &amp; site visit</h3><p>A few photos give Joel a first idea of the room. He then visits to measure up and see how you use the space.</p></li>
+      <li><h3>Estimate</h3><p>An early estimate gives you a sense of the cost before any detailed design work begins.</p></li>
+      <li><h3>Drawings</h3><p>Joel draws up the design, so you can see how each piece will look and fit the room.</p></li>
+      <li><h3>Final price &amp; agreement</h3><p>Once the design is settled, the build price is agreed. Changes requested mid-build, and the cost of fitting, may vary depending on the work involved.</p></li>
+      <li><h3>Made by hand</h3><p>Cabinets and furniture are made by hand in the Hebden Bridge workshop.</p></li>
       <li><h3>Fitting</h3><p>Joel fits each piece himself, scribing it to your walls and floors so it sits neatly in the room.</p></li>
     </ol>
   </div>

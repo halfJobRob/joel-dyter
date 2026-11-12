@@ -59,7 +59,7 @@ address { font-style: normal; }
 
 .eyebrow { font: 700 0.75rem/1.4 var(--sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--oak-dark); margin: 0 0 0.9rem; }
 .eyebrow--light { color: #d6b48a; }
-.section-title { font-size: clamp(2rem, 4vw, 3rem); }
+.section-title { font-size: clamp(2rem, 4vw, 3rem); text-wrap: balance; }
 .section-title--small { font-size: clamp(1.6rem, 3vw, 2.1rem); }
 .section-head { display: flex; justify-content: space-between; align-items: end; gap: 16px 32px; flex-wrap: wrap; margin-bottom: clamp(24px, 4vw, 40px); }
 .section-head .section-title { margin: 0; }
@@ -208,6 +208,10 @@ address { font-style: normal; }
 .prose h2 { margin-top: 0.4em; }
 .prose a { color: var(--oak-dark); font-weight: 600; }
 .prose ul { padding-left: 1.2em; }
+.pull-quote { margin: 0.4em 0 1.4em; padding-left: 20px; border-left: 3px solid var(--oak); }
+.pull-quote blockquote { margin: 0; }
+.prose .pull-quote p { font: 500 italic clamp(1.45rem, 2.4vw, 1.85rem)/1.3 var(--serif); color: var(--ink); margin: 0 0 8px; text-wrap: balance; }
+.pull-quote figcaption { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--oak-dark); }
 .prose li { margin-bottom: 0.5em; }
 .prose-wrap { padding-bottom: var(--section); }
 .prose-wrap--split { display: grid; gap: clamp(28px, 5vw, 64px); align-items: center; padding-bottom: 0; }
@@ -245,7 +249,7 @@ address { font-style: normal; }
 /* Steps */
 .steps { list-style: none; counter-reset: step; margin: 32px 0 0; padding: 0; display: grid; gap: 28px; }
 @media (min-width: 700px) { .steps { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1100px) { .steps { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width: 1100px) { .steps { grid-template-columns: repeat(4, 1fr); row-gap: 40px; } }
 .steps li { counter-increment: step; border-top: 1px solid rgba(255, 255, 255, 0.22); padding-top: 18px; }
 .steps li::before { content: counter(step, decimal-leading-zero); display: block; font: 500 italic 2.2rem/1 var(--serif); color: #d6b48a; margin-bottom: 12px; }
 .steps h3 { font-size: 1.5rem; color: #fff; }
