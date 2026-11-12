@@ -63,6 +63,7 @@ address { font-style: normal; }
 .section-title--small { font-size: clamp(1.6rem, 3vw, 2.1rem); }
 .section-head { display: flex; justify-content: space-between; align-items: end; gap: 16px 32px; flex-wrap: wrap; margin-bottom: clamp(24px, 4vw, 40px); }
 .section-head .section-title { margin: 0; }
+.section-head__intro { margin: 12px 0 0; max-width: 75ch; color: var(--ink-soft); font-size: 1.05rem; text-wrap: pretty; }
 .lede { font-size: clamp(1.1rem, 1.6vw, 1.25rem); color: var(--ink-soft); max-width: 60ch; }
 .text-link { font-weight: 700; color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--oak); padding-bottom: 2px; display: inline-flex; align-items: center; gap: 6px; }
 .text-link:hover { color: var(--oak-dark); }
@@ -157,7 +158,7 @@ address { font-style: normal; }
 /* Hero */
 .hero { padding: clamp(24px, 5vw, 64px) 0 clamp(40px, 6vw, 72px); }
 .hero__grid { display: grid; gap: clamp(28px, 5vw, 64px); align-items: center; }
-.hero__title { font-size: clamp(2.6rem, 6.2vw, 4.6rem); line-height: 1.02; margin-bottom: 0.4em; }
+.hero__title { font-size: clamp(2.6rem, 6.2vw, 4.6rem); line-height: 1.02; margin-bottom: 0.4em; text-wrap: balance; }
 .hero__title em { font-style: italic; font-weight: 500; color: var(--oak-dark); }
 .hero__wa { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; font-weight: 700; font-size: 0.95rem; color: var(--wa); text-decoration: none; }
 .hero__wa:hover { text-decoration: underline; }
