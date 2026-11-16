@@ -15,10 +15,10 @@ compare:
   afterAlt: "The finished kitchen"
 stages:
   - stage: "Design"
-    caption: "Every kitchen starts as a hand drawing, so you can see the room before a single board is cut."
+    caption: "The design is drawn up first, so you can see the room before a single board is cut."
     photos:
       - image: "/images/projects/charcoal-shaker-kitchen/01.jpg"
-        alt: "Joel’s hand-drawn perspective sketch of the kitchen"
+        alt: "Hand-drawn perspective sketch of the kitchen"
   - stage: "Fitted"
     caption: "Cabinets scribed to the old walls and floor, with oak worktops around the Belfast sink."
     photos:

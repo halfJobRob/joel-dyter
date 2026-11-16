@@ -20,11 +20,11 @@ highlights:
     text: The same craftsman measures, designs, makes and fits your kitchen, and you receive a clear price for the build before any work starts.
 faqs:
   - q: Do you design the kitchen as well as make it?
-    a: Yes. Joel measures the room, talks through how you use it and produces hand drawings before anything is made. Changes are easy at the drawing stage, which is the right time to make them.
+    a: Yes. Joel measures the room, talks through how you use it and the design is drawn up before anything is made. Changes are easy at the drawing stage, which is the right time to make them.
   - q: Can you work with an old or listed property?
     a: Older Pennine houses make up much of Joel's work, so uneven walls, stone floors and deep chimney breasts are all familiar. Past projects have included setting a range back into a chimney breast and matching old stone where walls needed rebuilding.
   - q: Can you manage the rest of the work too?
-    a: Often, yes. Joel has project-managed complete kitchen renovations, including flooring and building work, for clients who were unable to be on site. Mention it when you get in touch.
+    a: Yes, Joel can project-manage the work alongside the installation. The fee, and any other trades needed such as electricians and plumbers, are discussed and agreed for each project.
   - q: How long does a kitchen take?
     a: It depends on the size of the kitchen and the workshop schedule. You will be given a realistic timescale with your quotation and kept updated as the work progresses.
 gallery:
@@ -51,6 +51,6 @@ It's where the day begins, the morning sun beaming in and the smell of freshly g
 
 A room that does all that should be made to last. A handmade kitchen gives you the layout you actually want, in materials that age well: oak worktops that gain character with use, painted doors that can be refreshed in a new colour, and ***drawers that run as smoothly in twenty years as they do on the first day***.
 
-Joel visits to see the room and how you use it, from where the range sits to where everyone tends to gather. ***Alcoves, chimney breasts and uneven floors become part of the design*** rather than problems to work around. He then draws the kitchen up, so you can see the proportions and details before any timber is cut.
+Joel visits to see the room and how you use it, from where the range sits to where everyone tends to gather. ***Alcoves, chimney breasts and uneven floors become part of the design*** rather than problems to work around. The design is then drawn up, so you can see the proportions and details before any timber is cut.
 
 The kitchen is made in the Hebden Bridge workshop and fitted by Joel himself, with each unit scribed to the walls and floor. The aim is ***a kitchen that looks as though it has always been part of the house***.
