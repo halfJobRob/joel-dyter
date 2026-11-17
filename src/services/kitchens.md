@@ -40,8 +40,8 @@ gallery:
     alt: Range cooker beneath a lit timber mantel shelf
   - image: /images/gallery/12.jpg
     alt: Oak housing for a tall fridge freezer
-  - image: /images/gallery/06.jpg
-    alt: Grey painted kitchen with island
+  - image: /images/projects/dark-grey-kitchen/dark-grey-kitchen-01.jpg
+    alt: Dark grey painted kitchen with island
   - image: /images/gallery/04.jpg
     alt: Yellow painted kitchen with Belfast sink
   - image: /images/gallery/colden-farmhouse-kitchen-01.jpg

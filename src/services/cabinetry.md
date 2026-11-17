@@ -7,12 +7,9 @@ heading: Wardrobes, cupboards and storage, made to fit
 intro: "Fitted wardrobes, alcove units, under-stairs cupboards, bookcases and shelving, designed to make good use of every awkward corner of your home."
 heroImage: /images/projects/under-stairs-storage/02.jpg
 heroAlt: Painted cupboards and drawers built under a staircase
-sideImage: /images/projects/black-oak-wardrobe/04.jpg
-sideAlt: Plank-door cupboard opened to show oak shelving
+sideImage: /images/gallery/walnut-wardrobes-01.jpg
+sideAlt: Panelled walnut wardrobes
 workTitle: Cabinetry and storage from the workshop
-gallery:
-  - image: /images/gallery/walnut-wardrobes-01.jpg
-    alt: Panelled walnut wardrobes
 highlights:
   - title: Space put to use
     text: Under the stairs, into the eaves, beside the chimney breast. These are the places where made-to-measure storage makes the biggest difference.
