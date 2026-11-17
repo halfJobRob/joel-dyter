@@ -78,6 +78,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("byCategory", (items, category) =>
     (items || []).filter((p) => p.data.category === category)
   );
+  eleventyConfig.addFilter("bySlug", (items, slugs) => {
+    const wanted = [].concat(slugs || []);
+    return (items || []).filter((p) => wanted.includes(p.fileSlug));
+  });
   eleventyConfig.addFilter("exceptUrl", (items, url) => (items || []).filter((p) => p.url !== url));
   eleventyConfig.addFilter("categories", (items) => [...new Set((items || []).map((p) => p.data.category))]);
   eleventyConfig.addFilter("featured", (items) => (items || []).filter((p) => p.data.featured));

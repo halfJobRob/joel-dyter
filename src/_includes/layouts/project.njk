@@ -70,7 +70,7 @@ layout: layouts/base.njk
   </section>
   {% endif %}
 
-  {%- for t in testimonials.items %}{% if t.project and t.project == page.fileSlug %}
+  {%- for t in testimonials.items %}{% if (t.project and t.project == page.fileSlug) or (t.alsoOn and page.fileSlug in t.alsoOn) %}
   <section class="section section--tint">
     <figure class="container narrow big-quote">
       <blockquote><p>{{ t.excerpt }}</p></blockquote>
@@ -78,6 +78,18 @@ layout: layouts/base.njk
     </figure>
   </section>
   {% endif %}{% endfor %}
+
+  {%- set sameHouseProjects = collections.projects | bySlug(sameHouse) if sameHouse else [] -%}
+  {% if sameHouseProjects | length %}
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2 class="section-title">From the same house</h2></div>
+      <div class="cards">
+        {%- asyncEach p in sameHouseProjects %}{% include "partials/project-card.njk" %}{% endeach %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
 
   {%- set others = collections.projects | byCategory(category) | exceptUrl(page.url) | limit(3) -%}
   {% if others | length %}

@@ -4,6 +4,7 @@ location: ""
 category: "Staircases"
 date: 2025-05-02
 featured: false
+sameHouse: "robinson-kitchen"
 cover: "/images/projects/staircases/u-shaped-oak-staircase-14.jpg"
 coverAlt: "U-shaped oak staircase with a cupboard beneath"
 summary: "An oak staircase that turns back on itself as it rises, made in the workshop, fitted on site and finished with a cupboard built in beneath."

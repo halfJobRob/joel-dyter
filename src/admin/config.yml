@@ -107,6 +107,7 @@ collections:
               - { name: excerpt, label: Short quote (for the scrolling reviews), widget: text, hint: "One or two of the best sentences." }
               - { name: quote, label: Full review, widget: text }
               - { name: project, label: Linked project (optional), widget: relation, collection: projects, value_field: "{{slug}}", search_fields: [title], display_fields: [title], required: false }
+              - { name: alsoOn, label: Also show on these projects (optional), widget: relation, collection: projects, value_field: "{{slug}}", search_fields: [title], display_fields: [title], multiple: true, required: false }
               - { name: source, label: Source, widget: select, options: [Testimonial, Google, Facebook, Houzz], default: Testimonial }
       - name: pricing
         label: Prices

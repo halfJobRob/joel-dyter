@@ -15,7 +15,7 @@ compare:
   afterAlt: "The finished kitchen"
 stages:
   - stage: "Design"
-    caption: "The design is drawn up first, so you can see the room before a single board is cut."
+    caption: "Joel draws the design first, so you can see the room before a single board is cut."
     photos:
       - image: "/images/projects/charcoal-shaker-kitchen/01.jpg"
         alt: "Hand-drawn perspective sketch of the kitchen"

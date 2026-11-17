@@ -4,6 +4,7 @@ location: ""
 category: "Kitchens"
 date: 2025-04-01
 featured: false
+sameHouse: "u-shaped-oak-staircase"
 cover: "/images/projects/robinson-kitchen/robinson-kitchen-06.jpg"
 coverAlt: "Painted island with curved end and sink"
 summary: "A painted kitchen with a curved island and sink, plus a matching dresser and table. Joel has also made the client’s staircase, doors and furniture."
