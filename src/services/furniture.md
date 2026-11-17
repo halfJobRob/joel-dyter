@@ -3,21 +3,25 @@ title: Bespoke Furniture
 metaTitle: "Bespoke Handmade Furniture: Tables, Desks & Beds | Joel Dyter, Hebden Bridge"
 description: "Handmade dining tables, desks, beds, dressers and commercial furniture, made one at a time in solid timber by Joel Dyter in Hebden Bridge."
 category: Furniture
-heading: Handmade furniture, made one piece at a time
-intro: "Dining tables, desks, dressers, beds and headboards in solid timber, designed with you to suit the room and the way you use it."
+heading: Furniture made to be the centrepiece of your room
+intro: "One-off dining tables, desks, dressers and beds in solid timber, designed around your own sense of style. Each piece is made to stand out, and to be the first thing people notice when they walk in."
 heroImage: /images/projects/bespoke-oak-desk/08.jpg
 heroAlt: Curved-front writing desk in a study
 sideImage: /images/projects/bespoke-oak-desk/03.jpg
 sideAlt: Hand-cut dovetails on a drawer box
-workTitle: Recent furniture
+workTitle: Furniture from the workshop
 highlights:
-  - title: Made for your space
-    text: Sized and proportioned for the room, whether that is a table to seat the whole family or a desk to fit a particular alcove.
+  - title: Designed around your taste
+    text: Start with an idea, a photograph or a piece you have always wanted, and Joel will design it with you, sized and proportioned for your room.
   - title: Made to be handed down
     text: Traditional joints and solid timber mean pieces that can be used every day and still be in good order for the next generation.
   - title: Signed by the maker
     text: Each piece carries Joel's maker's plate, so you will always know where it came from.
 ---
-A single well-made piece of furniture can anchor a room: a dining table long enough for everyone at Christmas, a writing desk with drawers that follow its curved front, or a panelled headboard that spans the whole wall.
+A single well-made piece can change how a whole room feels.
 
-Each piece is designed with you, made by hand in the workshop and finished to suit its setting. Joel also makes furniture for businesses, including office desks, meeting tables and storage. [See the office furniture project](/projects/office-furniture/).
+Picture ***a dining table long enough for everyone at Christmas***, a writing desk with drawers that follow its curved front, or a panelled headboard that spans the whole wall. Pieces like these become part of the life of your home, and ***the ones your guests remember long after they leave***.
+
+Each piece is designed with you, made by hand in the workshop and finished to suit its setting, so it belongs in your room and nowhere else.
+
+Joel also makes furniture for businesses, including office desks, meeting tables and storage. [See the office furniture project](/projects/office-furniture/).

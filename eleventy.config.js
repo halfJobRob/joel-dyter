@@ -11,11 +11,23 @@ function sourcePath(src) {
   return path.join("src", src.replace(/^\/+/, ""));
 }
 
+// Published image names stay human readable, e.g.
+//   src/images/projects/charcoal-shaker-kitchen/03.jpg → /img/charcoal-shaker-kitchen-03-6LJlLL-800.webp
+// The short code changes whenever the photo itself changes, so a replaced
+// image is never served from a visitor's browser cache.
+function readableName(id, src, width, format) {
+  const rel = path.relative("src", src).replace(/\.[^.]+$/, "");
+  const parts = rel.split(path.sep).filter((p) => !["images", "projects", "site"].includes(p));
+  const name = parts.join("-").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  return `${name || "image"}-${id.slice(0, 6)}-${width}.${format}`;
+}
+
 const imageOptions = {
   widths: [480, 800, 1200, 1800],
   formats: ["webp", "jpeg"],
   outputDir: "_site/img/",
   urlPath: "/img/",
+  filenameFormat: readableName,
   sharpJpegOptions: { quality: 80, progressive: true },
   sharpWebpOptions: { quality: 78 },
 };
