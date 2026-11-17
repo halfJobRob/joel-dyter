@@ -5,9 +5,9 @@ description: "Handmade bathroom vanity units, washstands and storage in solid ti
 category: Bathrooms
 heading: Bathroom furniture, made to measure
 intro: "Vanity units, washstands, storage and panelling in properly sealed timber, made to fit your bathroom and to bring the warmth of real wood into the room."
-heroImage: /images/projects/washroom/01.jpg
+heroImage: /images/projects/bathrooms/dark-painted-washroom-01.jpg
 heroAlt: Dark painted washroom cabinetry with ceramic sink
-workTitle: Bathrooms and washrooms
+workTitle: Bathrooms from the workshop
 highlights:
   - title: Suited to damp rooms
     text: Timbers and finishes are chosen to cope with steam and splashes, unlike chipboard units that swell and fail.
