@@ -30,13 +30,13 @@ faqs:
 gallery:
   - image: /images/gallery/09.jpg
     alt: Cream kitchen with range cooker and tiled splashback
-  - image: /images/projects/robinson-kitchen/robinson-kitchen-12.jpg
+  - image: /images/projects/robinson-kitchen/robinson-kitchen-09.jpg
     alt: Kitchen with a round oak breakfast table and island
-  - image: /images/projects/robinson-kitchen/robinson-kitchen-13.jpg
+  - image: /images/projects/robinson-kitchen/robinson-kitchen-10.jpg
     alt: Round oak pedestal table at the end of a painted island
-  - image: /images/projects/robinson-kitchen/robinson-kitchen-14.jpg
+  - image: /images/projects/robinson-kitchen/robinson-kitchen-11.jpg
     alt: Painted island with wicker basket drawers
-  - image: /images/projects/robinson-kitchen/robinson-kitchen-15.jpg
+  - image: /images/projects/robinson-kitchen/robinson-kitchen-12.jpg
     alt: Range cooker beneath a lit timber mantel shelf
   - image: /images/gallery/12.jpg
     alt: Oak housing for a tall fridge freezer
