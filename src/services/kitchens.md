@@ -44,6 +44,8 @@ gallery:
     alt: Grey painted kitchen with island
   - image: /images/gallery/04.jpg
     alt: Yellow painted kitchen with Belfast sink
+  - image: /images/gallery/colden-farmhouse-kitchen-01.jpg
+    alt: Painted farmhouse kitchen with oak worktops under beams
 ---
 The kitchen is where most homes are really lived in.
 

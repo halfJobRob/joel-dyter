@@ -2,7 +2,7 @@
 title: "U-shaped oak staircase"
 location: ""
 category: "Staircases"
-date: 2025-05-02
+date: 2026-05-01
 featured: false
 sameHouse: "robinson-kitchen"
 cover: "/images/projects/staircases/u-shaped-oak-staircase-14.jpg"

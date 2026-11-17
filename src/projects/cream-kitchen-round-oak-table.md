@@ -1,8 +1,8 @@
 ---
-title: "Cream kitchen with a round oak breakfast table"
+title: "Cream kitchen with a round oak table"
 location: ""
 category: "Kitchens"
-date: 2024-06-01
+date: 2026-01-25
 featured: false
 cover: "/images/projects/cream-kitchen-round-oak-table/cream-kitchen-round-oak-table-04.jpg"
 coverAlt: "Cream painted kitchen with a round oak breakfast table and island"

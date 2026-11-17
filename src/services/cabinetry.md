@@ -10,6 +10,9 @@ heroAlt: Painted cupboards and drawers built under a staircase
 sideImage: /images/projects/black-oak-wardrobe/04.jpg
 sideAlt: Plank-door cupboard opened to show oak shelving
 workTitle: Cabinetry and storage from the workshop
+gallery:
+  - image: /images/gallery/walnut-wardrobes-01.jpg
+    alt: Panelled walnut wardrobes
 highlights:
   - title: Space put to use
     text: Under the stairs, into the eaves, beside the chimney breast. These are the places where made-to-measure storage makes the biggest difference.

@@ -1,5 +1,5 @@
 ---
-title: "Painted kitchen with oak worktops and a maroon range"
+title: "Painted kitchen with a maroon range"
 location: ""
 category: "Kitchens"
 date: 2024-05-01

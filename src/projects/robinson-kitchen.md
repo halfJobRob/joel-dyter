@@ -2,7 +2,7 @@
 title: "Painted kitchen with curved island and dresser"
 location: ""
 category: "Kitchens"
-date: 2025-04-01
+date: 2026-04-01
 featured: false
 sameHouse: "u-shaped-oak-staircase"
 cover: "/images/projects/robinson-kitchen/robinson-kitchen-06.jpg"
