@@ -5,9 +5,9 @@ description: "Bespoke handmade staircases, made to measure for old and new homes
 category: Staircases
 heading: A staircase that elevates your whole home
 intro: "A well-made staircase doesn't divide your home, it ties it together. Each one is designed around your house, from period cottages to modern homes, and made to be admired."
-heroImage: /images/projects/staircases/u-shaped-oak-staircase-02.jpg
+heroImage: /images/projects/staircases/u-shaped-oak-staircase-14.jpg
 heroAlt: U-shaped oak staircase with a cupboard beneath
-sideImage: /images/projects/staircases/u-shaped-oak-staircase-01.jpg
+sideImage: /images/projects/staircases/u-shaped-oak-staircase-06.jpg
 sideAlt: U-shaped oak staircase being assembled in the workshop
 workTitle: Staircases from the workshop
 highlights:

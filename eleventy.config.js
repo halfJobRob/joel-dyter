@@ -17,7 +17,9 @@ function sourcePath(src) {
 // image is never served from a visitor's browser cache.
 function readableName(id, src, width, format) {
   const rel = path.relative("src", src).replace(/\.[^.]+$/, "");
-  const parts = rel.split(path.sep).filter((p) => !["images", "projects", "site"].includes(p));
+  let parts = rel.split(path.sep).filter((p) => !["images", "projects", "site"].includes(p));
+  // robinson-kitchen/robinson-kitchen-01 → robinson-kitchen-01, not robinson-kitchen-robinson-kitchen-01
+  if (parts.length > 1 && parts.at(-1).startsWith(parts.at(-2))) parts = parts.slice(0, -2).concat(parts.at(-1));
   const name = parts.join("-").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
   return `${name || "image"}-${id.slice(0, 6)}-${width}.${format}`;
 }
