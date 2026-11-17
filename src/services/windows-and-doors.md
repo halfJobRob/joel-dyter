@@ -5,9 +5,9 @@ description: "Handmade timber windows, oak front doors, internal doors and fine 
 category: Windows, Doors & Joinery
 heading: A first impression that speaks volumes about your home
 intro: "Your front door is the first thing anyone sees of your home. Joel makes timber doors and windows to fit each opening exactly, designed to look as good from your hallway as they do from the street."
-heroImage: /images/projects/oak-front-door/01.jpg
+heroImage: /images/projects/doors-and-joinery/oak-door-stone-arch-01.jpg
 heroAlt: Oak door fitted in an arched stone doorway
-sideImage: /images/projects/walnut-floor-ash-inlay/01.jpg
+sideImage: /images/projects/doors-and-joinery/walnut-floor-ash-inlay-01.jpg
 sideAlt: Walnut floor with an ash inlay line
 workTitle: Doors and joinery from the workshop
 highlights:
