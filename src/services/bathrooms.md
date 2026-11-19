@@ -7,6 +7,8 @@ heading: Bathroom furniture, made to measure
 intro: "Vanity units, washstands, storage and panelling in properly sealed timber, made to fit your bathroom and to bring the warmth of real wood into the room."
 heroImage: /images/projects/bathrooms/dark-painted-washroom-01.jpg
 heroAlt: Dark painted washroom cabinetry with ceramic sink
+sideImage: /images/projects/bathrooms/curved-grey-vanity-unit-01.jpg
+sideAlt: Curved grey painted vanity unit with an inset basin
 workTitle: Bathrooms from the workshop
 highlights:
   - title: Suited to damp rooms

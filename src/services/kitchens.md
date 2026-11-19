@@ -38,8 +38,8 @@ gallery:
     alt: Painted island with wicker basket drawers
   - image: /images/projects/robinson-kitchen/robinson-kitchen-12.jpg
     alt: Range cooker beneath a lit timber mantel shelf
-  - image: /images/gallery/12.jpg
-    alt: Oak housing for a tall fridge freezer
+  - image: /images/gallery/03.jpg
+    alt: Contemporary kitchen with built-in ovens and long bar handles
   - image: /images/projects/dark-grey-kitchen/dark-grey-kitchen-01.jpg
     alt: Dark grey painted kitchen with island
   - image: /images/gallery/04.jpg

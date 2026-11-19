@@ -5,10 +5,10 @@ description: "Handmade dining tables, desks, beds and dressers, made one at a ti
 category: Furniture
 heading: Furniture made to be the centrepiece of your room
 intro: "One-off dining tables, desks, dressers and beds in solid timber, designed around your own sense of style. Each piece is made to stand out, and to be the first thing people notice when they walk in."
-heroImage: /images/projects/bespoke-oak-desk/08.jpg
-heroAlt: Curved-front writing desk in a study
-sideImage: /images/projects/bespoke-oak-desk/03.jpg
-sideAlt: Hand-cut dovetails on a drawer box
+heroImage: /images/projects/farmhouse-dining-table/02.jpg
+heroAlt: Long farmhouse dining table with a plank top and painted blue base
+sideImage: /images/projects/panelled-headboard/02.jpg
+sideAlt: Panelled headboard in deep blue with an oak capping and reading light
 workTitle: Furniture from the workshop
 highlights:
   - title: Designed around your taste
