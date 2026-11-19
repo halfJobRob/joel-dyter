@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- set pageTitle = (metaTitle or (title + " | " + site.name)) if title else (site.name + " | Handmade Kitchens & Bespoke Joinery, Hebden Bridge") %}
   <title>{{ pageTitle }}</title>
-  <meta name="description" content="{{ description or 'Handmade solid wood kitchens, cabinetry, staircases, windows and doors, designed and made by master cabinet maker Joel Dyter in his Hebden Bridge workshop.' }}">
+  <meta name="description" content="{{ description or summary or 'Handmade solid wood kitchens, cabinetry, staircases, windows and doors, designed and made by cabinet maker Joel Dyter in his Hebden Bridge workshop.' }}">
   <link rel="canonical" href="{{ page.url | absoluteUrl(site.url) }}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:title" content="{{ pageTitle }}">
-  <meta property="og:description" content="{{ description or site.tagline }}">
+  <meta property="og:description" content="{{ description or summary or site.tagline }}">
   <meta property="og:url" content="{{ page.url | absoluteUrl(site.url) }}">
   {%- set ogSrc = cover or ogImage or "/images/projects/charcoal-shaker-kitchen/03.jpg" %}
   <meta property="og:image" content="{{ site.url }}{% imageUrl ogSrc, 1200 %}">

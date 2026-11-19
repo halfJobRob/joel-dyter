@@ -1,7 +1,7 @@
 ---
 title: Bespoke Furniture
 metaTitle: "Bespoke Handmade Furniture: Tables, Desks & Beds | Joel Dyter, Hebden Bridge"
-description: "Handmade dining tables, desks, beds, dressers and commercial furniture, made one at a time in solid timber by Joel Dyter in Hebden Bridge."
+description: "Handmade dining tables, desks, beds and dressers, made one at a time in solid timber by Joel Dyter in Hebden Bridge."
 category: Furniture
 heading: Furniture made to be the centrepiece of your room
 intro: "One-off dining tables, desks, dressers and beds in solid timber, designed around your own sense of style. Each piece is made to stand out, and to be the first thing people notice when they walk in."
