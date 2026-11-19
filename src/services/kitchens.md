@@ -30,6 +30,8 @@ faqs:
 gallery:
   - image: /images/gallery/09.jpg
     alt: Cream kitchen with range cooker and tiled splashback
+  - image: /images/gallery/02.jpg
+    alt: Cream painted units with an oak worktop beside a black range cooker
   - image: /images/projects/robinson-kitchen/robinson-kitchen-09.jpg
     alt: Kitchen with a round oak breakfast table and island
   - image: /images/projects/robinson-kitchen/robinson-kitchen-10.jpg
@@ -38,7 +40,7 @@ gallery:
     alt: Painted island with wicker basket drawers
   - image: /images/projects/robinson-kitchen/robinson-kitchen-12.jpg
     alt: Range cooker beneath a lit timber mantel shelf
-  - image: /images/gallery/03.jpg
+  - image: /images/projects/luddenden-chapel-kitchen/05.jpg
     alt: Contemporary kitchen with built-in ovens and long bar handles
   - image: /images/projects/dark-grey-kitchen/dark-grey-kitchen-01.jpg
     alt: Dark grey painted kitchen with island
@@ -46,6 +48,8 @@ gallery:
     alt: Yellow painted kitchen with Belfast sink
   - image: /images/gallery/colden-farmhouse-kitchen-01.jpg
     alt: Painted farmhouse kitchen with oak worktops under beams
+  - image: /images/gallery/13.jpg
+    alt: Painted plate rack and cookbook shelf between old beams
 ---
 The kitchen is where most homes are really lived in.
 

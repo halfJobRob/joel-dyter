@@ -39,5 +39,9 @@ stages:
         alt: "Painted island with wicker basket drawers"
       - image: "/images/projects/robinson-kitchen/robinson-kitchen-12.jpg"
         alt: "Range cooker beneath a lit timber mantel shelf"
+      - image: "/images/projects/robinson-kitchen/robinson-kitchen-13.jpg"
+        alt: "Painted and oak units with a Belfast sink on a flagstone floor"
+      - image: "/images/projects/robinson-kitchen/robinson-kitchen-14.jpg"
+        alt: "Shaped oak mantel shelf with lights beneath"
 ---
 

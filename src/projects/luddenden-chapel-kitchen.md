@@ -19,5 +19,7 @@ stages:
         alt: "Deep pan drawer below the hob"
       - image: "/images/projects/luddenden-chapel-kitchen/04.jpg"
         alt: "Sink set into a dark worktop"
+      - image: "/images/projects/luddenden-chapel-kitchen/05.jpg"
+        alt: "Built-in ovens, wall cupboards and a dark worktop under a glass splashback"
 ---
 
