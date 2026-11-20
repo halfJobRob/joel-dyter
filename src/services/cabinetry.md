@@ -7,8 +7,8 @@ heading: Wardrobes, cupboards and storage, made to fit
 intro: "Fitted wardrobes, alcove units, under-stairs cupboards, bookcases and shelving, designed to make good use of every awkward corner of your home."
 heroImage: /images/projects/under-stairs-storage/02.jpg
 heroAlt: Painted cupboards and drawers built under a staircase
-sideImage: /images/gallery/walnut-wardrobes-01.jpg
-sideAlt: Panelled walnut wardrobes
+sideImage: /images/projects/black-oak-wardrobe/03.jpg
+sideAlt: Black-painted plank doors with copper handles
 workTitle: Cabinetry and storage from the workshop
 highlights:
   - title: Space put to use
