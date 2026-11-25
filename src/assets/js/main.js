@@ -282,6 +282,18 @@
     if (choice === "yes") loadGA();
     else if (choice !== "no") consent.hidden = false;
     $("[data-consent-accept]", consent).addEventListener("click", () => { save("yes"); loadGA(); });
+    // "Change your cookie choice" on the privacy page: forget the choice, remove any
+    // statistics cookies, and show the question again.
+    document.querySelectorAll("[data-consent-reset]").forEach((btn) => btn.addEventListener("click", () => {
+      try { localStorage.removeItem("jd-consent"); } catch (e) {}
+      const host = location.hostname.replace(/^www\./, "");
+      document.cookie.split(";").map((c) => c.split("=")[0].trim()).filter((n) => /^_ga/.test(n)).forEach((n) => {
+        [location.hostname, "." + host, ""].forEach((d) => {
+          document.cookie = n + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/" + (d ? "; domain=" + d : "");
+        });
+      });
+      location.reload();
+    }));
     $("[data-consent-decline]", consent).addEventListener("click", () => save("no"));
   }
 })();
