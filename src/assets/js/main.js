@@ -149,24 +149,89 @@
 
     const MAX_FILES = 5;
     const MAX_TOTAL = 20 * 1024 * 1024;
+    // Phone photos are shrunk in the browser before sending: a 10MB photo becomes
+    // roughly 0.5–1MB at 2000px, which is plenty for Joel to see the room, keeps the
+    // email small, and drops hidden photo data such as GPS location.
+    const MAX_SIDE = 2000;
+    const JPEG_QUALITY = 0.82;
+    let prepared = null; // files to send, once shrunk
+    let preparing = null; // promise while shrinking is in progress
+
+    const shrink = async (file) => {
+      if (!/^image\//.test(file.type) || file.type === "image/gif" || file.size < 600 * 1024) return file;
+      try {
+        let src;
+        try { src = await createImageBitmap(file, { imageOrientation: "from-image" }); }
+        catch (e) {
+          src = await new Promise((resolve, reject) => {
+            const img = new Image();
+            img.onload = () => resolve(img);
+            img.onerror = reject;
+            img.src = URL.createObjectURL(file);
+          });
+        }
+        const w = src.width, h = src.height;
+        const scale = Math.min(1, MAX_SIDE / Math.max(w, h));
+        const canvas = document.createElement("canvas");
+        canvas.width = Math.round(w * scale);
+        canvas.height = Math.round(h * scale);
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#fff";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(src, 0, 0, canvas.width, canvas.height);
+        if (src.close) src.close();
+        const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/jpeg", JPEG_QUALITY));
+        if (!blob || blob.size >= file.size) return file;
+        const name = file.name.replace(/\.[^.]+$/, "") + ".jpg";
+        return new File([blob], name, { type: "image/jpeg", lastModified: file.lastModified });
+      } catch (e) {
+        return file; // the browser can't read this format (e.g. HEIC outside Safari): send it as it is
+      }
+    };
+
+    const sizeText = (n) => (n / 1048576).toFixed(1) + "MB";
     const checkFiles = () => {
       if (!fileInput) return true;
-      const files = Array.from(fileInput.files);
+      const files = prepared || Array.from(fileInput.files);
       const total = files.reduce((n, f) => n + f.size, 0);
       if (files.length > MAX_FILES) { fileHint.textContent = `Please choose up to ${MAX_FILES} files.`; return false; }
       if (total > MAX_TOTAL) { fileHint.textContent = "Those files are over 20MB in total. Try fewer or smaller photos, or send them on WhatsApp."; return false; }
-      fileHint.textContent = files.length ? `${files.length} file${files.length > 1 ? "s" : ""} attached (${(total / 1048576).toFixed(1)}MB)` : "";
+      fileHint.textContent = files.length ? `${files.length} file${files.length > 1 ? "s" : ""} attached (${sizeText(total)})` : "";
       return true;
     };
-    fileInput?.addEventListener("change", checkFiles);
+
+    fileInput?.addEventListener("change", () => {
+      const files = Array.from(fileInput.files);
+      prepared = null;
+      if (files.length > MAX_FILES) { checkFiles(); return; }
+      if (!files.length) { fileHint.textContent = ""; return; }
+      fileHint.textContent = "Preparing photos…";
+      const run = Promise.all(files.map(shrink)).then((out) => {
+        if (preparing !== run) return; // a newer selection replaced this one
+        prepared = out;
+        preparing = null;
+        checkFiles();
+      });
+      preparing = run;
+    });
 
     const setStatus = (msg, kind) => {
       status.textContent = msg;
       status.className = "form__status" + (kind ? " is-" + kind : "");
     };
 
+    const buildData = () => {
+      const data = new FormData(form);
+      if (fileInput && prepared) {
+        data.delete(fileInput.name);
+        prepared.forEach((f) => data.append(fileInput.name, f, f.name));
+      }
+      return data;
+    };
+
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
+      if (preparing) { setStatus("Preparing photos…"); await preparing; setStatus(""); }
       if (!checkFiles()) return;
       if (isDemo) {
         setStatus("This is a preview, so the form isn't connected yet. On the live site this will email Joel. For now, please use WhatsApp or email.", "error");
@@ -175,7 +240,7 @@
       submit.disabled = true;
       setStatus("Sending…");
       try {
-        const res = await fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
+        const res = await fetch(form.action, { method: "POST", body: buildData(), headers: { Accept: "application/json" } });
         const data = await res.json().catch(() => ({}));
         if (res.ok && data.ok) {
           const thanks = new URL("../thank-you/", location.href);

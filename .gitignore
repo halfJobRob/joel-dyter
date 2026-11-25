@@ -5,3 +5,6 @@ _site/
 
 # Original photo downloads (processed copies live in src/images)
 /images/
+
+# Local notes (never commit)
+/private
